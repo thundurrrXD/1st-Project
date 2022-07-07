@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <!-- Header for the for -->
+    <header>
+        <h1 id="title">Website Survey</h1>
+        <p id="description">Thanks for using my website, I appreciate any feedback!</p>
+    </header>
+
+    <!-- Form -->
+    <form id="survey-form">
+        <!-- Fieldset that contains spaces for
+        a name, email, and age -->
+        <fieldset>
+            <label for="name" id="name-label">Name <input type="text" name="fname" id="name" placeholder="Enter your name" required></label>
+            <label for="email" id="email-label">Email <input type="email" name="email" id="email" placeholder="Enter your email" required></label>
+            <label for="age" id="number-label">Age (optional) <input type="number" name="age" id="number" min="13" max="200" placeholder="Enter your age"></label>
+        </fieldset>
+
+        <!-- Fieldset that determines the user's
+        educational level -->
+        <fieldset>
+            <!-- Asks for level of education -->
+            <h2>What level of education are you at currently?</h2>
+            <label for=""><input type="radio" name="education" id="" value="middle-school"> Middle School</label>
+            <label for=""><input type="radio" name="education" id="" value="high-school"> High School</label>
+            <label for=""><input type="radio" name="education" id="" value="uni"> College/University</label>
+            <label for=""><input type="radio" name="education" id="" value="post-grad"> Post-graduate</label>
+
+            <!-- Asks the user what device they opened the website on -->
+            <h2>What did you use this website on?</h2>
+            <label for=""><input type="checkbox" name="desktop" id="desktop" value="pc"> Desktop</label>
+            <label for=""><input type="checkbox" name="laptop" id="laptop" value="laptop"> Laptop</label>
+            <label for=""><input type="checkbox" name="tablet" id="tablet" value="tablet"> Tablet</label>
+            <label for=""><input type="checkbox" name="phone" id="phone" value="phone"> Mobile Device (a phone)</label>
+            
+            <!-- Asks how much did the site help the user -->
+            <h2>How much did this site help you?</h2>
+            <select name="referrer" id="dropdown">
+                <option value="">Select an option</option>
+                <option value="very-much">Very much!</option>
+                <option value="a-lot">A lot!</option>
+                <option value="little-bit">A little bit</option>
+                <option value="not-much">Not much</option>
+                <option value="not-much-at-all">Not at all...</option>
+            </select>
+        </fieldset>
+
+        <!-- Asks the user for any potential improvements to the site -->
+        <fieldset>
+            <!-- Textarea that prompts user to type what I can do to 
+            improve the website -->
+            <h2>What are some ways that I can improve this website?</h2>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+
+            <!-- Textarea that prompts user to type what new features 
+            I can add to the website the website -->
+            <h2>Any additional services my site can provide?</h2>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </fieldset>
+        
+        <!-- Submit button -->
+        <input type="submit" value="Submit" id="submit">
+    </form>
+
+    
+</body>
+</html>
